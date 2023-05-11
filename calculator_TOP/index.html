@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="lightdark">
+        <p>pink</p>
+        <label class="switch">
+            <input type="checkbox" onclick="switchColor()">
+            <span class="slider round"></span>
+        </label>
+        <p>blue</p>
+    </div>
+
+    <div class="container">
+        <div class="frame">
+            <div class="display">
+                <div class="display-value" id="previousDisplayValue"></div>
+                <div class="display-value" id="currentDisplayValue"></div>
+
+            </div>
+            <div id="btnLayout" class="btn-layout">
+                    <button class="allclear" data-type="reset" id="allclear" >AC</button>
+					<button class="clear" data-type="backspace" id="clear" >C</button>
+					<button class="operators" data-type="operator" id="remainder" value="%" >&#37</button>
+					<button class="operators" data-type="operator" id="divide" value="/" >&#247</button>
+					<button class="digits" data-type="number" id="digit-7" value="7" >7</button>
+					<button class="digits" data-type="number" id="digit-8" value="8" >8</button>
+					<button class="digits" data-type="number" id="digit-9" value="9" >9</button>
+					<button class="operators" data-type="operator" id="plus" value="+" >&#43</button>
+					<button class="digits" data-type="number" id="digit-4" value="4" >4</button>
+					<button class="digits" data-type="number" id="digit-5" value="5" >5</button>
+					<button class="digits" data-type="number" id="digit-6" value="6" >6</button>
+					<button class="operators" data-type="operator" id="minus" value="-" >&#45</button>
+					<button class="digits" data-type="number" id="digit-1" value="1" >1</button>
+					<button class="digits" data-type="number" id="digit-2" value="2" >2</button>
+					<button class="digits" data-type="number" id="digit-3" value="3" >3</button>
+					<button class="operators" data-type="operator" id="multiply" value="x" >&#215</button>
+					<button class="digits" data-type="number" id="digit-0" value="0" >0</button>
+					<button class="decimal" data-type="decimal" id="decimal" value="." >.</button>
+					<button class="equals" data-type="equal" id="equals" value="=" >&#61</button>
+            </div>                
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
